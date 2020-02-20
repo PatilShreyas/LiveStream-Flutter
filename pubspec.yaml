@@ -1,6 +1,6 @@
 name: livestream
 description: LiveStream is a simple class which makes communication easy among different modules of your application.
-version: 0.0.1
+version: 1.0.0
 homepage: https://github.com/PatilShreyas/LiveStream-Flutter
 
 environment:
