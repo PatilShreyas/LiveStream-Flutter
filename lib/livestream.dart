@@ -17,7 +17,7 @@ abstract class _ILiveStream {
 class LiveStream implements _ILiveStream {
   _DataStore _mStorage = _DataStore.getInstance();
 
-  /// Sets a new value [value] to the data stream [stream]. 
+  /// Sets a new value [value] to the data stream [stream].
   /// If there are active subscribers, the value will be dispatched to them.
   @override
   void emit(String stream, var value) {
@@ -52,7 +52,6 @@ class _DataStore {
 
   // Sets/Adds the new value to the given key.
   void setValue(String key, var value) {
-
     // Retrieve existing data item from map.
     _DataItem item = _mDataItemsMap[key];
     if (item == null) {
@@ -61,7 +60,7 @@ class _DataStore {
 
     // Set new value to new/existing item.
     item.value = value;
-    
+
     // Reset item to the map.
     _mDataItemsMap[key] = item;
 
@@ -70,10 +69,8 @@ class _DataStore {
 
     // Check if callback functions exists or not.
     if (callback != null) {
-
       // Iterate callback functions one by one.
       while (callback.moveNext()) {
-
         // Dispatch value to the callback.
         callback?.current(value);
       }
@@ -83,20 +80,18 @@ class _DataStore {
   // Sets/Adds the new callback to the given data stream.
   void setCallback(String key, Function(Object) callback) {
     if (callback != null) {
-
       // Retrieve existing data item from the map.
       _DataItem item = _mDataItemsMap[key];
 
       if (item == null) {
         item = _DataItem();
       }
-      
+
       // Retrieve callback functions from data item.
       List<Function(Object)> callbacks = item.callbacks;
 
       // Check if callback functions exists or not.
       if (callbacks == null) {
-
         // If it's null then create new List.
         callbacks = new List();
 
