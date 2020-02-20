@@ -1,6 +1,5 @@
-# LiveStream
-
-A new Flutter package project.
+# LiveStream - Flutter
+LiveStream is a data holder class which can observe change of data in real-time and emit values too. Here's emitter subscriber pattern. It's developed in pure dart code.
 
 ## Getting Started
 
