@@ -1,16 +1,17 @@
 # LiveStream - Flutter 
 
-<p align="center">
-  <img src="images/LiveStream-anim.gif" />
-</p>
-
-LiveStream is a data holder class which can observe change of data in real-time and emit values too. Here's emitter subscriber pattern. It's developed in pure Dart.
-
+[![Pub](https://img.shields.io/pub/v/livestream.svg)](https://pub.dartlang.org/packages/livestream)
 ![Github Followers](https://img.shields.io/github/followers/PatilShreyas?label=Follow&style=social)
 ![GitHub stars](https://img.shields.io/github/stars/PatilShreyas/LiveStream-Flutter?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/PatilShreyas/LiveStream-Flutter?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/PatilShreyas/LiveStream-Flutter?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/imShreyasPatil?label=Follow&style=social)
+
+<p align="center">
+  <img src="images/LiveStream-anim.gif" />
+</p>
+
+LiveStream is a data holder class which can observe change of data in real-time and emit values too. Here's emitter subscriber pattern. It's developed in pure Dart.
 
 ## ⚡️ Getting Started
 
