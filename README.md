@@ -1,4 +1,4 @@
-# LiveStream - Flutter 
+# LiveStream - Dart
 
 [![Pub](https://img.shields.io/pub/v/livestream.svg)](https://pub.dartlang.org/packages/livestream)
 ![Github Followers](https://img.shields.io/github/followers/PatilShreyas?label=Follow&style=social)
