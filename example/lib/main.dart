@@ -27,7 +27,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String dateTime;
+  String dateTime = DateTime.now().toString();
+  Color textColor = Colors.blue;
   bool _isExecuting = false;
   BackgroundExecute backgroundExecute = new BackgroundExecute();
   LiveStream _liveStream = new LiveStream();
@@ -37,19 +38,20 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundExecute.execDateTime();
       _isExecuting = true;
     }
-    backgroundExecute.execOnce();
+    backgroundExecute.execColor();
   }
 
-  void _initLiveStream() {   
-
-    _liveStream.on("dateTime", (value){
+  void _initLiveStream() {
+    _liveStream.on("dateTime", (value) {
       setState(() {
-        dateTime = value;
+        dateTime = value.toString();
       });
     });
-  
-    _liveStream.on("random", (value){
-      print("Random Value = $value");
+
+    _liveStream.on("text_color", (value) {
+      setState(() {
+        textColor = value;
+      });
     });
   }
 
@@ -68,7 +70,8 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$dateTime',
-              style: Theme.of(context).textTheme.display1,
+              style: TextStyle(
+                  color: textColor, fontWeight: FontWeight.bold, fontSize: 40),
             ),
             RaisedButton(
               onPressed: _initLiveStream,
@@ -76,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             RaisedButton(
               onPressed: _startExecute,
-              child: Text("Start Execution"),
+              child: Text("Change Color"),
             )
           ],
         ),
