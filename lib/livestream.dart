@@ -34,7 +34,7 @@ class _DataStore {
   static _DataStore _instance;
 
   // Map instance to store data values with data stream.
-  HashMap<String, _DataItem> _mDataItemsMap = new HashMap();
+  HashMap<String, _DataItem> _mDataItemsMap = HashMap();
 
   // Sets/Adds the new value to the given key.
   void setValue(String key, var value) {
@@ -69,7 +69,7 @@ class _DataStore {
       // Check if callback functions exists or not.
       if (callbacks == null) {
         // If it's null then create new List.
-        callbacks = new List();
+        callbacks = List();
 
         // Set callback functions list to data item.
         item.callbacks = callbacks;
@@ -95,7 +95,7 @@ class _DataStore {
 
   // Returns singleton instance of _DataStore
   static _DataStore getInstance() {
-    _instance ??= new _DataStore();
+    _instance ??= _DataStore();
     return _instance;
   }
 }
