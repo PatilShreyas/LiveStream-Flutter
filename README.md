@@ -8,7 +8,7 @@
 ![Twitter Follow](https://img.shields.io/twitter/follow/imShreyasPatil?label=Follow&style=social)
 
 <p align="center">
-  <img src="images/LiveStream-anim.gif" />
+  <img src="https://github.com/PatilShreyas/LiveStream-Flutter/raw/master/images/LiveStream-anim.gif" />
 </p>
 
 LiveStream is a data holder class which can observe change of data in real-time and emit values too. Here's emitter subscriber pattern. It's developed in pure Dart.
@@ -20,7 +20,7 @@ Add below dependency in [`pubspec.yaml`](pubspec.yaml).
 
 ```yml
 dependencies:
-  livestream: ^1.0.0
+  livestream: ^1.0.1
 ```
 
 ### Initialize `LiveStream` Instance
