@@ -9,3 +9,7 @@
 ## [1.0.1] - 2020/02/21
 
 * Fixed code in `LiveStream` package. 
+
+## [1.0.2] - 2020/02/21
+
+* Removed unnecessary code from package.

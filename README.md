@@ -20,7 +20,7 @@ Add below dependency in [`pubspec.yaml`](pubspec.yaml).
 
 ```yml
 dependencies:
-  livestream: ^1.0.1
+  livestream: ^1.0.2
 ```
 
 ### Initialize `LiveStream` Instance
